@@ -52,7 +52,7 @@ const cadastraTarefa = () => {
         <Formulario
             :trocar-filtro="e => (estado.filtro = e.target.value)"
             :tarefa-temp="estado.tarefaTemp"
-            :edita-tarefa-temp="e => (estado.tarefaTemp = e)"
+            :edita-tarefa-temp="e => (estado.tarefaTemp = e.target.value)"
             :cadastra-tarefa="cadastraTarefa"
         />
         <ListaDeTarefas :tarefas="getTarefasFiltradas()" />
